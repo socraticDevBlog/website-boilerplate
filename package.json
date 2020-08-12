@@ -1,18 +1,21 @@
 {
-  "name": "Max's website boilerplate code",
-  "version": "0.0.2",
-  "description": "",
+  "name": "website-boilerplate",
+  "version": "1.0.0",
+  "description": "## requirements :",
   "main": "index.js",
-  "dependencies": {
-    "sergey": "^0.0.13"
-  },
-  "devDependencies": {},
   "scripts": {
     "start": "sergey",
-    "dev": "sergey --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "sergey --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/socraticDevBlog/website-boilerplate.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/socraticDevBlog/website-boilerplate/issues"
+  },
+  "homepage": "https://github.com/socraticDevBlog/website-boilerplate#readme"
 }
