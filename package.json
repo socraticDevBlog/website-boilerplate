@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/socraticDevBlog/website-boilerplate/issues"
   },
-  "homepage": "https://github.com/socraticDevBlog/website-boilerplate#readme"
+  "homepage": "https://github.com/socraticDevBlog/website-boilerplate#readme",
+  "dependencies": {
+    "sergey": "0.0.13"
+  }
 }
