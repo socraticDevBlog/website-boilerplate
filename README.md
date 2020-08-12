@@ -17,3 +17,10 @@
 4. use local web server to speed your development via command-line : ``npm run dev``.  And go to this addresss on your favorite web browser -> [http://localhost:8080](http://localhost:8080)
 
 5. that's it : now you're on your own! :zany_face:
+
+### use cases
+
+- You want to put out a website in a very short amount of time
+
+- You want to try out different front-end components, or different configurations
+  - you want to try out different calendar components and play with their configs in a smaller scale website than your current real-life project.
