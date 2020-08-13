@@ -18,3 +18,7 @@ html {
     background-color: #f5f5f5;
   }
   /* sticky end */
+
+.disabled {
+  background: #dddddd;
+}
