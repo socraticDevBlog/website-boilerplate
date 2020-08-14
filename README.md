@@ -1,5 +1,7 @@
 # website-boilerplate
 
+Build a basic static website with partial views capability (i.e. 'includes') in no time.
+
 ## requirements :
 
 - recent version of ``nodeJs`` and ``npm``
