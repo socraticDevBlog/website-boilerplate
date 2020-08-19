@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<sergey-import src="head" />
+
+<body>
+    <sergey-import src="navbar" />
+    <div class="container">
+        <!-- page-header doesnt exist in Boostrap v4 -->
+        <div class="pb-2 mt-4 mb-2 border-bottom">
+            <h1>Overflow word-wrap</h1>
+        </div>
+        <p>
+            Different ways to break words
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="col-md-1"></div>
+        <div class="col-md-10"></div>
+        <p class="para">
+            They say the fishing is excellent at Lake
+            <em class="normal">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+            though I've never been there myself. (<code>normal</code>)
+        </p>
+        <p class="para">
+            They say the fishing is excellent at Lake
+            <em class="ow-anywhere">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>, though I've never been there
+            myself. (<code>overflow-wrap: anywhere</code>)
+        </p>
+        <p class="para">
+            They say the fishing is excellent at Lake
+            <em class="ow-break-word">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>, though I've never been there
+            myself. (<code>overflow-wrap: break-word</code>)
+        </p>
+        <p class="para">
+            They say the fishing is excellent at Lake
+            <em class="word-break">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+            though I've never been there myself. (<code>word-break</code>)
+        </p>
+        <p class="para">
+            They say the fishing is excellent at Lake
+            <em class="hyphens para">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+            though I've never been there myself. (<code>hyphens</code>, without
+            <code>lang</code> attribute)
+        </p>
+        <p class="para" lang="en para">
+            They say the fishing is excellent at Lake
+            <em class="hyphens">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+            though I've never been there myself. (<code>hyphens</code>, English rules)
+        </p>
+        <p class="hyphens para" lang="de">
+            They say the fishing is excellent at Lake
+            <em class="hyphens">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+            though I've never been there myself. (<code>hyphens</code>, German rules)
+        </p>
+    </div>
+    <div class="col-md-1"></div>
+    </div>
+    <sergey-import src="footer" />
+</body>
+
+<style>
+    /* word breaks */
+    .para {
+        width: 13em;
+        margin: 2px;
+        background: gold;
+    }
+
+    .ow-anywhere {
+        overflow-wrap: anywhere;
+    }
+
+    .ow-break-word {
+        overflow-wrap: break-word;
+    }
+
+    .word-break {
+        word-break: break-all;
+    }
+
+    .hyphens {
+        hyphens: auto;
+    }
+</style>
+
+</html>
