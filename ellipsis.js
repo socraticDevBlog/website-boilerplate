@@ -68,15 +68,17 @@ const ellipsis = function (cutoff, wordbreak, escapeHtml) {
 
         ogText = d.toString(); // cast numbers
 
-        if (ogText.length <= cutoff) {
-            displayedText = ogText;
-        } else {
+        if (ogText.length >= cutoff) {
             displayedText = ogText.substr(0, cutoff - 1);
-        }
-
-        // Find the last white space character in the string
-        if (wordbreak) {
-            displayedText = displayedText.replace(/\s([^\s]*)$/, '');
+            
+            // Find the last white space character in the string
+            if (wordbreak) {
+                displayedText = displayedText.replace(/\s([^\s]*)$/, '');
+            }
+            
+            displayedText = displayedText + "&#8230;";
+        } else {
+            displayedText = ogText;
         }
 
         // Protect against uncontrolled HTML input
@@ -85,7 +87,6 @@ const ellipsis = function (cutoff, wordbreak, escapeHtml) {
             ogText = esc(ogText);
         }
 
-        return `<span class="ellipsis" title="${esc(ogText)}">${displayedText}&#8230;</span>`;
-        // return '<span class="ellipsis" title="' + esc(d) + '">' + shortened + '&#8230;</span>';
+        return `<span class="ellipsis" title="${esc(ogText)}">${displayedText}</span>`;
     };
 };
